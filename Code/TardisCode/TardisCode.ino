@@ -154,8 +154,8 @@ void loop() {
   //Check Switches and do stuff
   if (!sw14 && !sw14_on){
     sw14_on = true;
-    fadeStripOscillate(10, 90, 1, 5);
-    fadePixelOscillate(20, 75, BLUE, 1.1, 5);
+    fadeStripOscillate(20, 80, 1, 5);
+    fadePixelOscillate(5, 100, BLUE, 1.1, 5);
     play(TARDIS_TAKEOFF);
   }
   if (!sw15 && !sw15_on){
@@ -606,7 +606,7 @@ void doStripFade(){
 void play(int sound){
   if (sound >=2 and sound <= 9){
     digitalWrite(sound, LOW);
-    delay(3);
+    delay(250);
     digitalWrite(sound, HIGH);
   }
 }
