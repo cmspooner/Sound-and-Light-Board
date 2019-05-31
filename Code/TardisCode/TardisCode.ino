@@ -154,8 +154,8 @@ void loop() {
   //Check Switches and do stuff
   if (!sw14 && !sw14_on){
     sw14_on = true;
-    fadeStripOscillate(5, 100, 1.1, 5);
-    fadePixelOscillate(5, 100, BLUE, 1.1, 5);
+    fadeStripOscillate(5, 100, 1 , 5);
+    fadePixelOscillate(10, 100, BLUE, 1.1, 5);
     play(TARDIS_TAKEOFF);
   }
   if (!sw15 && !sw15_on){
